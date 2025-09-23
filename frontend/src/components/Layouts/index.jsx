@@ -1,0 +1,1 @@
+ export{default as LayoutCustomer} from "./LayoutCustomer/LayoutCustomer";

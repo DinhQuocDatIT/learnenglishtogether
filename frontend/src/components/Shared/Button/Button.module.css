@@ -1,0 +1,33 @@
+.wrapper {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+}
+.primary {
+  background-color: var(--primary);
+  color: var(--primary-page);
+  transition: all 0.3s ease;
+}
+.primary:hover {
+  background-color: var(--primary-page);
+  color: var(--primary);
+  border: var(--primary) solid 1px;
+}
+.text {
+  background-color: var(--primary-page);
+  color: var(--primary);
+  border: var(--primary) solid 1px;
+  transition: all 0.3s ease;
+}
+.text:hover {
+  background-color: var(--primary);
+  color: var(--primary-page);
+}
+/* reponsive */
+@media (max-width: 1024px) {
+  /* action */
+  .registerBtn {
+    display: none;
+  }
+}

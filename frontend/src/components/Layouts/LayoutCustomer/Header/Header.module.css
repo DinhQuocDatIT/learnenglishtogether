@@ -1,6 +1,73 @@
 .wrapper {
   display: flex;
   align-items: center;
-  height: 64px;
+  height: var(--height-header);
+  justify-content: space-between;
+  box-shadow: 2px 4px 6px -1px rgb(238, 238, 238);
+  background-color: var(--primary-color-background);
+  padding: 0 20px;
+}
+
+/* brand */
+.wrapper .brand {
+}
+.brand a {
+  display: flex;
+  gap: 5px;
   justify-content: center;
+  align-items: center;
+  color: var(--primary);
+}
+.brand .logo {
+  width: 32px;
+  height: 32px;
+}
+.brand .nameBrand {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: 600;
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.navbar a {
+  font-size: var(--p-font-size);
+  color: var(--primary-secondary-text);
+  line-height: var(--height-header);
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+.navbar a:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+/* action */
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action .noAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* reponsive */
+@media (max-width: 1024px) {
+  /* navbar */
+  .navbar {
+    display: none;
+  }
+
+  /* action */
+  .noAccount .registerBtn {
+    display: none;
+  }
 }
